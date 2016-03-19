@@ -1,0 +1,42 @@
+use workoutmanager;
+
+delete from users;
+delete from exercises;
+delete from workouts;
+delete from workout_exercises;
+
+/***************************/
+/*     INSERT INTO USERS   */
+/***************************/
+
+insert into users values ('', 'Javi', 'Pedrera',26,'javipedrera@gmail.com','pedrera','','2014-10-10 12:00:00','2014-10-10 12:11:00');
+insert into users values ('', 'Fernando', 'Morales',26,'fernando@gmail.com','contrasenia','','2014-09-10 11:00:00','2014-10-11 12:13:00');
+
+
+/***************************/
+/*   insert into workouts  */
+/***************************/
+
+insert into workouts values ('','rutina destructora', '2','2014-10-10 12:01:00','2014-10-10 12:12:00');
+insert into workouts values ('','rutina destructora', '2','2014-10-10 12:02:00','2014-10-10 12:13:00');
+insert into workouts values ('','rutina multifibra', '1','2014-10-10 12:03:00','2014-10-10 12:14:00');
+insert into workouts values ('','rutina multifibra', '1','2014-10-10 12:04:00','2014-10-10 12:15:00');
+insert into workouts values ('','rutina multifibra', '1','2014-10-10 12:05:00','2014-10-10 12:16:00');
+insert into workouts values ('','rutina multifibra', '1','2014-10-10 12:06:00','2014-10-10 12:17:00');
+
+
+/*************************************/
+/*    insert into workout_exercises  */
+/*************************************/
+
+insert into workout_exercises values ('','Press banca','Pectoral','1', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Press superior', 'Pectoral','1', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Aperturas', 'Pectoral', '1','4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Prensa con Mancuernas', 'Pectoral', '1', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Prensa con Mancuernas - desde Empuñadura Pronadora hacia Neutral', 'Pectoral','1', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 2:00');
+
+insert into workout_exercises values ('','Dominadas', 'Dorsal','2', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Remo - Parado; A Dos Brazos', 'Dorsal','2', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Remo - sobre la Rodilla; A un Brazo', 'Dorsal','2', '4', '10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Apertura de Espalda - Pronador', 'Dorsal','2', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 1:30');
+insert into workout_exercises values ('','Peso Muerto', 'Dorsal','2', '4','10 - 10 - 10 - 8','30 - 30 - 35 - 35','1:30 - 1:30 - 1:30 - 2:00');

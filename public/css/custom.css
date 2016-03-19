@@ -1,0 +1,245 @@
+body {
+	margin: 0px;
+	background-color: #F6F6F6;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.capitalize { text-transform: capitalize; }
+
+#container-fluid-1 { background:#333; }
+
+#header-home1 {
+	font-family: oswald;
+	color: white; 
+	font-size: 3em; 
+	font-weight: 900; 
+	text-shadow: 2px 2px #151515;
+}
+
+#header-home2 {
+	font-family: oswald;
+	color: white; 
+	font-size: 6em;
+	font-weight: 500; 
+	text-shadow: 2px 2px #151515;
+}
+
+#login_form {
+	margin-top: 200px;
+	width: 400px;
+	height: 400px;
+	background-color: rgba(202, 202, 202, 0.51);
+}
+
+#fitprogress { margin-top: 250px; }
+.col-md-4 h1 { color:white; font-size: 3em; }
+
+#row1{	
+	border-top: 5px solid rgba(0, 0, 0, 0.45);
+	border-bottom: 4px solid white;
+	background: rgb(36, 148, 242);
+}
+
+/* FitProgress Apple */
+.col-sm-7.wow.fadeInRight { height:500px; }
+.col-md-2.text-center h2 { color:white;	margin: 10px 0 10px 0; }
+.col-md-2.text-center > i { font-size:4em; color: rgb(78, 157, 255); }
+#row3 .container { margin-top:100px }
+#description { color:white; }
+#container-icons { margin-top: 100px }
+
+/* Login Section */
+#cl-wrapper{ position: initial;	width: 100%; }
+#cl-wrapper-index { margin-top: 200px }
+
+.header-oswald {
+	color: white;
+	font-weight: 600;
+	font-family: oswald;
+	font-size: 4em;
+	text-shadow: 2px 2px rgb(107, 107, 107);
+}
+#row2 .header-oswald { text-shadow: 2px 2px black; }
+#row3 .header-oswald { text-shadow: 2px 2px black; }
+
+p { text-shadow: 0px 0px white;	color: #3f3f3f; }
+
+.cbp_tmtimeline { right:10%; }
+
+.login-container { margin-top: 200px; }
+
+.col-lg-4.col-md-6 { opacity: 0.91; }
+
+footer{
+	border-top: 5px solid white;
+	height: 200px;
+	background: rgb(78, 157, 255);
+}
+
+ul { padding-left: 30px; }
+.login-container .middle-login { width: 360px; }
+.container.text-center { margin:50px auto; }
+.container.text-center i{
+    border: 3px solid rgb(78, 157, 255);
+    width: 100px !important;
+    height: 100px !important;
+    color: rgb(78, 157, 255);
+    background: white;
+    font-size: 3em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+#prefooter { margin-bottom: 80px; }
+
+/* Iconito fix */
+.navbar-default .navbar-brand { width: 200px; } 
+.wow p { color:white; }
+
+/*---------------------------*/
+/*       MEDIA QUERIES       */
+/*---------------------------*/
+@media only screen and (max-width : 479px) {
+	/* Que ofrece fit progress components */
+	.col-md-2.text-center.wow.rollIn { margin-bottom: 25px; }
+
+	/* Anota tus marcas consigue tu meta & login form */
+	#cl-wrapper-index { margin-top: 50px;}
+	
+	.login-container .middle-login { width: auto !important;}
+	#header-home1{ text-align: center; }
+	.home-text{	text-align: center;	}
+	.middle-login.wow.fadeIn{ margin: 0 auto !important;}
+	
+	#header-home1{ font-size: 1.5em;}
+	#header-home2{ font-size: 3em }
+
+	/* La aplicación que estabas buscando */
+	.col-sm-5.wow.fadeInLeft { margin-top:50px !important; text-align: center }
+	.col-sm-5.wow.fadeInLeft .header-oswald { font-size: 3em; text-align: center }
+
+	/* TimeLine*/
+	.cbp_tmtimeline { right:0% !important;	}
+
+	/* FitProgress Apple */
+	.col-sm-7.wow.fadeInRight { height:200px; }
+	#cl .login-container .middle-login{	width: auto !important; }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	#header-home1 { text-align: center }
+	.home-text {	text-align: center;	}
+	.col-md-2.text-center p { padding: 0 20%; }
+	.middle-login.wow.fadeIn { margin: 0 auto !important; }
+	.cbp_tmtimeline { right:0% !important; }
+	.col-sm-5.wow.fadeInLeft { margin-top:50px !important; text-align: center }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) {
+	.home-text{ text-align: center;	}
+	/*.col-md-2.text-center p{ padding: 0 20%}*/
+	.middle-login.wow.fadeIn{ margin: 0 auto !important;}
+	.col-sm-5.wow.fadeInLeft{ margin-top: 90px !important;}
+	.cbp_tmtimeline { right:10% !important;	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.col-md-2.text-center p{ padding: 0%; }	
+	.col-sm-5.wow.fadeInLeft{ margin-top: 120px !important;}
+	.cbp_tmtimeline { right:10% !important;	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.col-lg-4.col-md-4.col-sm-12.col-xs-12.header-block { margin-left: 10% }
+	.cbp_tmtimeline { right:10% !important;	}
+}
+
+/*---------------------------*/
+/*         DASHBOARD         */
+/*---------------------------*/
+
+.force-height{
+	min-height: 444px;
+}
+
+/*---------------------------*/
+/*         GALLERY           */
+/*---------------------------*/
+
+.fileUpload {
+	margin: 3px;
+	overflow: hidden;
+	position: relative;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#uploadFile { padding: 4.5px; }
+.cl-mcont .row.row-exercise { margin-top: 0px !important; }
+.btn i {	font-size: 14px; }
+.btn { padding: 8px 11px; }
+.login-container .block-flat .content .form-group { margin-bottom: 10px;}
+.form-horizontal.group-border-dashed .form-group { border-bottom: 1px dashed #efefef; padding: 20px 0; }
+
+/*---------------------------*/
+/*         GENERAL           */
+/*---------------------------*/
+
+/* Navbar toggle */
+.nav.navbar-nav.navbar-right.user-nav { background-color: #2494F2; }
+#head-nav .navbar-nav { padding:0; }
+.row.alert.alert-info.alert-white.rounded.text-center { margin:0 10px; }
+.force-30-width { min-height: 444px; }
+
+/*---------------------------*/
+/*         TIMELINE          */
+/*---------------------------*/
+
+ul#timeline {
+	border-top:5px solid #2494F2;
+	margin-top: 100px;
+	list-style: none;
+}
+
+li.event{
+	border: 5px solid #2494F2;
+	z-index: 1;
+	background-color: white;
+	text-align: center;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	line-height: 100px;
+	position: relative;
+	top: -50px;
+	margin: 0 1%;
+}
+
+.event .fa {
+	font-size: 24px;
+}
+
+#more-events {
+	height: 50px;
+	border-radius: 5px;
+	top: -65px;
+}
+
+
+
