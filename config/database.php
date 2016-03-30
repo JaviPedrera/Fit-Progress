@@ -68,6 +68,19 @@ return [
 			'strict'    => false,
 		],
 
+		'mysql-tunnel' => [
+	        'driver'    => 'mysql',
+	        'host'      => '127.0.0.1',
+	        'port'      => '13306',
+	        'database'  => 'your-app-name',
+	        'username'  => 'your-app-name',
+	        'password'  => env('DB_PASSWORD', ''),
+	        'charset'   => 'utf8',
+	        'collation' => 'utf8_unicode_ci',
+	        'prefix'    => '',
+	        'strict'    => false,
+	    ],
+
 		'pgsql' => [
 			'driver'   => 'pgsql',
 			'host'     => env('DB_HOST', 'localhost'),
