@@ -59,7 +59,14 @@
 		}
 	}
 
-	$totalWeights = [$totalWeightsMonth0, $totalWeightsMonth1, $totalWeightsMonth2, $totalWeightsMonth3, $totalWeightsMonth4, $totalWeightsMonth5];
+	$totalWeights = [
+		$totalWeightsMonth0, 
+		$totalWeightsMonth1, 
+		$totalWeightsMonth2, 
+		$totalWeightsMonth3, 
+		$totalWeightsMonth4, 
+		$totalWeightsMonth5
+	];
 	?>
 
 	@if( ! $user->workouts->isEmpty())
@@ -145,33 +152,6 @@
 		?>
 
 		{{-- Starting variable colCount for grouping columns in rows of three --}}
-		
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- HORIZONTAL EVENT TIMELINE  -->
-				<div class="block-flat">
-					<div class="header">
-						<h1>Últimos eventos</h1>
-					</div><!-- end header -->
-					<div class="content">
-						<ul id="timeline">
-							@foreach ($lastFourEvents as $event)
-								<li class="event">
-									<a href="#">
-										<span class="{{ $event->printIcon() }}"></span>
-								  	</a>
-								</li><!-- end .event -->
-							@endforeach
-							<li class="event" id="more-events">
-								<p>Más eventos</p>
-							</li><!-- #more-events -->
-						</ul>
-					</div><!-- end content -->
-					
-				</div><!-- end block-flat -->
-			</div><!-- end col-lg-12 -->
-		</div><!-- end row -->
-
 		{{--*/ $colCount += 3 /*--}}
 		<div class="row">
 			<div class="col-lg-12">
